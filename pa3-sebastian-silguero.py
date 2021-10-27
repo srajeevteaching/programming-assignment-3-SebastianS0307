@@ -20,11 +20,11 @@ def quidditch(goals, catches):
 # Function to calculate a gymnasts final score
 def gymnastics(dif_score):
     total = 0
-    count = 1
-    while count < 6:
+    attempt = 1
+    while attempt < 6:
         score = int(input("Enter the score from 0 to 10: "))
         total += score
-        count += 1
+        attempt += 1
     final_score2 = (total / 5) + dif_score
     return final_score2
 
