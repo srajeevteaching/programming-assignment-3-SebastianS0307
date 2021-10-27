@@ -7,8 +7,7 @@
 
 # Function to calculate quarterback rating
 def qb_rating(completions, passing_yards, td_passes, interceptions, attempts):
-    passer = 100 * (5 * (completions / attempts - 0.3) + 0.25 * (passing_yards / attempts - 3) + 20 * (
-            td_passes / attempts) + 2.375 - (25 * interceptions / attempts)) / 6
+    passer = 100 * (5 * (completions / attempts - 0.3) + 0.25 * (passing_yards / attempts - 3) + 20 * (td_passes / attempts) + 2.375 - (25 * interceptions / attempts)) / 6
     return passer
 
 
